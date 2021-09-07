@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #22677c;
 }
 
 body {
@@ -25,11 +27,12 @@ body {
 .container {
     height: 90%;
     width: 600px;
-    background: #fff;
+    background: #ffffffb3;
 }
 
 .container h1 {
     text-align: center;
+    color: #22677c;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -47,28 +50,31 @@ body {
     height: 25px;
     padding: 5px;
     margin-bottom: 1px;
+    background: #ffffffb3;
     border: 0;
     border-bottom: 1px solid gray;
     outline: none;
+    border-radius: 3px;
 }
 
 .addTodo form input:focus {
-    box-shadow: 0px 0px 5px 0px #34B7F1;
+    box-shadow: 0px 0px 5px 0px #235a7a;
 }
 
 .addTodo form button {
     padding: 3px;
     color: #fff;
-    background: rgb(39, 37, 37);
-    border: 1px solid rgb(39, 37, 37);
+    background: #22677c;
+    border: 1px solid #22677c;
     border-radius: 3px;
     cursor: pointer;
     transition: all .2s;
 }
 
 .addTodo form button:hover {
-    color: rgb(39, 37, 37);
-    background: #fff;
+    color: rgba(0, 0, 0, .3);
+    background: #235a7a;
+    border: 1px solid #235a7a;
 }
 
 .todoBox {
@@ -99,5 +105,5 @@ body {
 }
 span.strike {  
 text-decoration: line-through;
-animation: strike .6s linear;
+animation: strike .4s linear;
 }

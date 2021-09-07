@@ -48,7 +48,7 @@ function renderTask(listTask) {
         //it creates the li markup
         li.innerHTML = 
         `<input type="checkbox" class="checkbox" ${checked}>
-        <span>${item.name}</span>
+        <span>- ${item.name}</span>
         <i class="far fa-trash-alt delete-button"></i>`;
 
         //if the task is completed, it add a line through
@@ -106,7 +106,6 @@ ulList.addEventListener('click', function(event) {
     if(event.target.type === 'checkbox') {
         toggle(event.target.parentElement.getAttribute('data-key'));
     }
-    
     
     if(event.target.classList.contains('delete-button')) {
         deleteTask(event.target.parentElement.getAttribute('data-key'))
