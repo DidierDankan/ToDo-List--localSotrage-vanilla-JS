@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Vanilla</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="layer">
+        <div class="container">
+            <h1>My Task List</h1>
+            <div class="addTodo">
+                <form id="newItem">
+                    <input type="text" name="text" class="todo-input" placeholder="Start adding tasks">
+                    <button type="submit" class="add-btn">
+                        Add Task
+                    </button>
+                </form>
+            </div>
+
+            <div class="todoBox">
+                <div class="todoListContainer">
+                    <ul class="ToDo">
+                        <!-- gets populated as it goes -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="main.js"></script>
+</body>
+</html>

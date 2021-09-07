@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url('img/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.layer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+}
+
+.container {
+    height: 90%;
+    width: 600px;
+    background: #fff;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.addTodo form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addTodo form input {
+    width: 80%;
+    height: 25px;
+    padding: 5px;
+    margin-bottom: 1px;
+    border: 0;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.addTodo form input:focus {
+    box-shadow: 0px 0px 5px 0px #34B7F1;
+}
+
+.addTodo form button {
+    padding: 3px;
+    color: #fff;
+    background: rgb(39, 37, 37);
+    border: 1px solid rgb(39, 37, 37);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.addTodo form button:hover {
+    color: rgb(39, 37, 37);
+    background: #fff;
+}
+
+.todoBox {
+    width: 90%;
+    max-height: 455px;
+    margin: 0 auto;
+    margin-top: 15px;
+    overflow-y: auto;
+}
+
+.ToDo .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+    transition: text-decoration .2s;
+}
+
+.ToDo .task i {
+    text-align: right;
+    cursor: pointer;
+}
+
+@keyframes strike {
+    from { text-decoration-color: transparent; }
+    to { text-decoration-color: auto; }
+}
+span.strike {  
+text-decoration: line-through;
+animation: strike .6s linear;
+}
